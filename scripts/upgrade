@@ -66,9 +66,9 @@ ynh_abort_if_errors
 #=================================================
 ynh_script_progression --message="Stopping a systemd service..." --weight=1
 
-ynh_systemd_action --service_name=${app}-web --action="stop" --log_path=systemd --line_match="Stopped"
-ynh_systemd_action --service_name=${app}-sidekiq --action="stop" --log_path=systemd --line_match="Stopped"
-ynh_systemd_action --service_name=${app}-streaming --action="stop" --log_path=systemd --line_match="Stopped"
+ynh_systemd_action --service_name=${app}-web --action="stop" --log_path=systemd
+ynh_systemd_action --service_name=${app}-sidekiq --action="stop" --log_path=systemd
+ynh_systemd_action --service_name=${app}-streaming --action="stop" --log_path=systemd
 
 #=================================================
 # ENSURE DOWNWARD COMPATIBILITY
@@ -301,7 +301,7 @@ ynh_script_progression --message="Starting a systemd service..." --weight=1
 
 ynh_systemd_action --service_name=${app}-web --action="start" --log_path=systemd --line_match="Listening on"
 ynh_systemd_action --service_name=${app}-sidekiq --action="start" --log_path=systemd --line_match="Schedules Loaded"
-ynh_systemd_action --service_name=${app}-streaming --action="start" --log_path=systemd --line_match="Worker 1 now listening"
+ynh_systemd_action --service_name=${app}-streaming --action="start" --log_path=systemd --line_match="Streaming API now listening"
 
 #=================================================
 # RELOAD NGINX

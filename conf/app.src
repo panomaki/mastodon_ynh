@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/panomaki/mastodon/archive/refs/tags/v4.1.0.tar.gz
-SOURCE_SUM=ab16be4c7972310cd3b10a13f7ddae8bf0ab957ec3139c30dc375adaa9f20a4c
+SOURCE_URL=https://github.com/tootsuite/mastodon/archive/refs/tags/v4.2.6.tar.gz
+SOURCE_SUM=17ec59b2e984dc61e2d440a1d32caed7ad5b0b969701ad777932797b9920e53f
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
